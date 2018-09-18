@@ -1,0 +1,39 @@
+<?php
+$registrationIds = array("APA91bG5SQT2MTapOqhI2NCBlRf3-GuHkSdKH3vg8-uWlYSahISjxz_Z3w0LPLTgCkhVb8pmUKWT-fyzF1VCkThooO3XsiohliLLaAZBh16jnjE3V1zIKUcwnhRoUl9dqlWzDQCO4tpp" );
+
+// prep the bundleUR DEVICE IDS WILL GO HERE
+$msg = array
+(
+    'message'       => 'here is a message. message',
+    'title'         => 'This is a title. title',
+    'subtitle'      => 'This is a subtitle. subtitle',
+    'tickerText'    => 'Ticker text here...Ticker text here...Ticker text here',
+    'vibrate'   => 1,
+    'sound'     => 1
+);
+
+$fields = array
+(
+    'registration_ids'  => $registrationIds,
+    'data'              => $msg
+);
+
+$headers = array
+(
+    'Authorization: key=AIzaSyBZVeN2VJIqZrM196M1rrlRpoJF9MRN6tQ',
+    'Content-Type: application/json'
+);
+
+$ch = curl_init();
+curl_setopt( $ch,CURLOPT_URL, 'https://android.googleapis.com/gcm/send' );
+curl_setopt( $ch,CURLOPT_POST, true );
+curl_setopt( $ch,CURLOPT_HTTPHEADER, $headers );
+curl_setopt( $ch,CURLOPT_RETURNTRANSFER, true );
+curl_setopt( $ch,CURLOPT_SSL_VERIFYPEER, false );
+curl_setopt( $ch,CURLOPT_POSTFIELDS, json_encode( $fields ) );
+$result = curl_exec($ch );
+curl_close( $ch );
+
+echo $result;
+
+?>

@@ -1,0 +1,52 @@
+{
+  "categorization": {
+    "type": "APPLICATION",
+    "category": "Business"
+  },
+  "description": {
+    "texts": {
+      "title": "Sezzwho Media Inc",
+      "features": [
+        " Real reviews by Real Customers"
+      ],
+      "short-description": "Welcome to Sezzwho - Real reviews by Real Customers. ",
+      "full-description": "Word of mouth is still the best form of advertising but the way people are talking about your business and products has changed.  Conversation and word of mouth have now shifted to social media.  Brands strive every day to use their social media to create brand influencers  -  people who care about their organization and love their brand,  products and services so much that they tell their friends about  them and recommend them. \n\nInfluencers are invaluable to a businesses because when they promote a business online, they expose their positive message to thousands of potential customers and potential customers are far more likely to listen to and take action on the real recommendations of their friends and family over traditional advertising.\n\nIncreasingly, consumers are demanding an exciting and authentic experience on Social Media.  The best way to capture an audiences attention is through engaging video and real content.  Video allows Sezzwho's users to show off the product and talk to their audience at the same time.  Sezzwho's videos capture the authenticity in the reviewers voice, their excitement about the product and show the product being used.  When a consumer creates a video review about the products and services they love, the experience is addicting because they can share their 30 second spotlight with their peers who are most likely interested in similar things.\n\n Sezzwho is a tool for both consumers and businesses.   Consumers everywhere now have an easy platform to search video reviews before they make their purchase and are also able to create mini shareable video recommendations of the products they love most.   And businesses  everywhere will now have access to authentic word of mouth  in the form of mini real commercials that can be shared with thousands of potential customers.  ",
+      "keywords": "sezzwho, video, social, networking, recommendation ",
+      "recent-changes": "",
+      "privacy-policy": "",
+      "eula": ""
+    },
+    "images": {
+      "screenshots": [
+        "package-assets/res/welcome/In-App-Tutorial-480x800-01.png",
+        "package-assets/res/welcome/In-App-Tutorial-480x800-02.png",
+        "package-assets/res/welcome/In-App-Tutorial-480x800-03.png",
+        "package-assets/res/welcome/In-App-Tutorial-480x800-04.png",
+        "package-assets/res/welcome/In-App-Tutorial-480x800-05.png",
+        "package-assets/res/welcome/In-App-Tutorial-480x800-06.png",
+        "package-assets/res/welcome/In-App-Tutorial-480x800-07.png",
+        "package-assets/res/welcome/In-App-Tutorial-480x800-08.png",
+        "package-assets/res/welcome/In-App-Tutorial-480x800-09.png",
+        "package-assets/res/welcome/In-App-Tutorial-480x800-10.png"
+      ],
+      "app-icon-small": "package-assets/res/for web/SezzWho-logo-114x114.png",
+      "app-icon": "package-assets/res/for web/SezzWho-logo-512x512.png",
+      "small-promo": "package-assets/res/for web/SezzWho_promotional_screen_180x120_`.png",
+      "large-promo": "package-assets/res/for web/SezzWho_promotional_screen_1024X500.png"
+    },
+    "videos": {
+      "video-url": "https://www.youtube.com/watch?v=AozTQtDvA24"
+    }
+  },
+  "packages": {
+    "apk-file": "/D/sezz mobile app/andorid APK/sezzwho-android.cordova.android.201612220435.apk",
+    "zip-xdk-compliant": false,
+    "zip-file": "",
+    "secondary-apk-file": ""
+  },
+  "support": {
+    "email": "info@sezzwho.com",
+    "website": "http://www.sezzwho.com"
+  },
+  "testing-instructions": ""
+}

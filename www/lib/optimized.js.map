@@ -1,0 +1,1 @@
+{"version":3,"sources":["../js/vendor/firebase.js"],"names":["firebase"],"mappings":";;AACA;;IAAYA,Q","file":"optimized.js","sourcesContent":["// JavaScript Document\r\nimport * as firebase from \"firebase\";\r\n"]}

@@ -1,0 +1,797 @@
+{
+  "project": {
+    "projectSettingsVersion": "3.0.0",
+    "creationData": {
+      "type": "App Designer",
+      "projectTypeName": "com.intel.xdk.projecttype.jsapp",
+      "src": "jsapp/template-blank-cordova-ad-project/sample.zip",
+      "projectGuid": "ca5adad9-10c7-4757-9017-5e0ade9d71a2",
+      "lastModifiedDate": 1494359449357,
+      "creationDate": 1470509855876
+    },
+    "XDK-app-designer": "true",
+    "sourceDirectory": "www",
+    "startFile": "index.html",
+    "projectFiles": {
+      "xdk-publish-meta-data.json": {
+        "settings": {
+          "project": {
+            "XDK-not-deployed": "True"
+          }
+        }
+      }
+    },
+    "projectDirectories": {},
+    "libraries": [],
+    "serviceMethods": [],
+    "cordovaPluginsDirectory": "plugins",
+    "cordovaPlugins": [
+      {
+        "id": "cordova-plugin-statusbar",
+        "name": "StatusBar",
+        "version": "2.1.3",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-statusbar",
+        "gitref": "",
+        "paramvals": {},
+        "selectedState": "Included",
+        "dependsOn": [],
+        "topLevel": true,
+        "cordovaVersion": ">=3.0.0",
+        "permissions": {},
+        "description": "Cordova StatusBar Plugin",
+        "data": {},
+        "dependedBy": [],
+        "checksum": "c0146fbc"
+      },
+      {
+        "id": "cordova-plugin-device",
+        "version": "1.1.2",
+        "selectedState": "Included",
+        "data": {},
+        "paramvals": {},
+        "dependsOn": [],
+        "dependedBy": [],
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-device",
+        "permissions": {},
+        "topLevel": true,
+        "gitref": "",
+        "name": "Device",
+        "description": "Cordova Device Plugin",
+        "checksum": "2373ccea",
+        "cordovaVersion": ">=3.0.0"
+      },
+      {
+        "id": "cordova-plugin-splashscreen",
+        "version": "3.2.2",
+        "selectedState": "Included",
+        "data": {},
+        "paramvals": {},
+        "dependsOn": [],
+        "dependedBy": [],
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-splashscreen",
+        "permissions": {},
+        "topLevel": true,
+        "gitref": "",
+        "name": "Splashscreen",
+        "description": "Cordova Splashscreen Plugin",
+        "checksum": "47137083",
+        "cordovaVersion": ">=3.1.0"
+      },
+      {
+        "id": "com.phonegap.plugins.PushPlugin",
+        "name": "PushPlugin",
+        "version": "2.5.0",
+        "originType": "repo",
+        "origin": "https://github.com/phonegap-build/PushPlugin.git",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/com.phonegap.plugins.PushPlugin",
+        "selectedState": "Included",
+        "checksum": "75197821",
+        "dependsOn": [],
+        "topLevel": false,
+        "cordovaVersion": ">=3.0.0",
+        "author": "Bob Easterday",
+        "permissions": {
+          "android:name": [
+            "android.permission.ACCESS_NETWORK_STATE",
+            "android.permission.GET_ACCOUNTS",
+            "android.permission.WAKE_LOCK",
+            "android.permission.VIBRATE",
+            "com.google.android.c2dm.permission.RECEIVE",
+            "$PACKAGE_NAME.permission.C2D_MESSAGE",
+            "$PACKAGE_NAME.permission.RECEIVE_ADM_MESSAGE",
+            "com.amazon.device.messaging.permission.RECEIVE"
+          ]
+        },
+        "description": "\r\n\t\tThis plugin allows your application to receive push notifications on Android, iOS, WP8 and Windows8 devices.\r\n    Android uses Google Cloud Messaging.\r\n    iOS uses Apple APNS Notifications.\r\n    WP8 uses Microsoft MPNS Notifications.\r\n    Windows8 uses Microsoft WNS Notifications.\r\n\t",
+        "data": {},
+        "dependedBy": [],
+        "custom": "true"
+      },
+      {
+        "id": "com.sharinglabs.cordova.plugin.clearCache",
+        "name": "Clear Cache",
+        "version": "1.0.4",
+        "originType": "repo",
+        "origin": "https://github.com/Sharinglabs/cordova-plugin-cache.git",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/com.sharinglabs.cordova.plugin.clearCache",
+        "selectedState": "Included",
+        "checksum": "64fcb09c",
+        "dependsOn": [],
+        "topLevel": false,
+        "cordovaVersion": ">=3.0.0",
+        "author": "Modern Alchemists OG",
+        "permissions": {},
+        "description": "\r\n      <p>This is a WebView cache plugin for Phonegap 3.3.0 / Cordova 3.3.1 supporting Android (>=2.3.3) and iOS(>=6.0). It allows to clear the cordova webview cache.</p>\r\n    ",
+        "data": {},
+        "dependedBy": [],
+        "custom": "true"
+      },
+      {
+        "id": "cordova-plugin-camera",
+        "name": "Camera",
+        "version": "2.2.0",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-camera",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-camera",
+        "selectedState": "Included",
+        "checksum": "ec9311a8",
+        "dependsOn": [],
+        "topLevel": false,
+        "cordovaVersion": ">=3.0.0",
+        "permissions": {
+          "android:name": [
+            "android.permission.WRITE_EXTERNAL_STORAGE"
+          ]
+        },
+        "description": "Cordova Camera Plugin",
+        "data": {},
+        "dependedBy": []
+      },
+      {
+        "id": "cordova-plugin-compat",
+        "name": "Compat",
+        "version": "1.0.0",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-compat",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-compat",
+        "selectedState": "Included",
+        "checksum": "61c62eb",
+        "dependsOn": [],
+        "topLevel": false,
+        "cordovaVersion": ">=3.0.0",
+        "permissions": {},
+        "description": "Cordova Compatibility Plugin",
+        "data": {},
+        "dependedBy": [
+          "cordova-plugin-contacts"
+        ],
+        "custom": "true"
+      },
+      {
+        "id": "cordova-plugin-dialogs",
+        "name": "Notification",
+        "version": "1.2.1",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-dialogs",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-dialogs",
+        "selectedState": "Included",
+        "checksum": "2948bc11",
+        "dependsOn": [],
+        "topLevel": false,
+        "cordovaVersion": ">=3.0.0",
+        "permissions": {},
+        "description": "Cordova Notification Plugin",
+        "data": {},
+        "dependedBy": []
+      },
+      {
+        "id": "cordova-plugin-file",
+        "name": "File",
+        "version": "4.2.0",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-file",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-file",
+        "selectedState": "Included",
+        "checksum": "1fdd7f27",
+        "dependsOn": [],
+        "topLevel": false,
+        "cordovaVersion": ">=3.0.0",
+        "permissions": {
+          "android:name": [
+            "android.permission.WRITE_EXTERNAL_STORAGE"
+          ]
+        },
+        "description": "Cordova File Plugin",
+        "data": {},
+        "dependedBy": []
+      },
+      {
+        "id": "cordova-plugin-file-transfer",
+        "name": "File Transfer",
+        "version": "1.5.1",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-file-transfer",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-file-transfer",
+        "selectedState": "Included",
+        "checksum": "dbdc1f18",
+        "dependsOn": [],
+        "topLevel": false,
+        "cordovaVersion": ">=3.0.0",
+        "permissions": {
+          "android:name": [
+            "android.permission.WRITE_EXTERNAL_STORAGE"
+          ]
+        },
+        "description": "Cordova File Transfer Plugin",
+        "data": {},
+        "dependedBy": []
+      },
+      {
+        "id": "cordova-plugin-geolocation",
+        "name": "Geolocation",
+        "version": "2.2.0",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-geolocation",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-geolocation",
+        "selectedState": "Included",
+        "checksum": "ec466374",
+        "dependsOn": [],
+        "topLevel": false,
+        "cordovaVersion": ">=3.0.0",
+        "permissions": {
+          "android:name": [
+            "android.permission.ACCESS_COARSE_LOCATION",
+            "android.permission.ACCESS_FINE_LOCATION"
+          ]
+        },
+        "description": "Cordova Geolocation Plugin",
+        "data": {},
+        "dependedBy": []
+      },
+      {
+        "id": "cordova-plugin-inappbrowser",
+        "name": "InAppBrowser",
+        "version": "1.4.0",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-inappbrowser",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-inappbrowser",
+        "selectedState": "Included",
+        "checksum": "f88bc51f",
+        "dependsOn": [],
+        "topLevel": true,
+        "cordovaVersion": ">=3.1.0",
+        "permissions": {},
+        "description": "Cordova InAppBrowser Plugin",
+        "data": {},
+        "dependedBy": []
+      },
+      {
+        "id": "cordova-plugin-media-capture",
+        "name": "Capture",
+        "version": "1.3.0",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-media-capture",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-media-capture",
+        "selectedState": "Included",
+        "checksum": "be43ec7e",
+        "dependsOn": [],
+        "topLevel": false,
+        "cordovaVersion": ">=3.1.0",
+        "permissions": {
+          "android:name": [
+            "android.permission.RECORD_AUDIO",
+            "android.permission.RECORD_VIDEO",
+            "android.permission.WRITE_EXTERNAL_STORAGE"
+          ]
+        },
+        "description": "Cordova Media Capture Plugin",
+        "data": {},
+        "dependedBy": []
+      },
+      {
+        "id": "cordova-plugin-network-information",
+        "name": "Network Information",
+        "version": "1.2.2-dev",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-network-information",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-network-information",
+        "selectedState": "Included",
+        "checksum": "70e2cc5c",
+        "dependsOn": [],
+        "topLevel": false,
+        "cordovaVersion": ">=3.1.0",
+        "permissions": {
+          "android:name": [
+            "android.permission.ACCESS_NETWORK_STATE"
+          ]
+        },
+        "description": "Cordova Network Information Plugin",
+        "data": {},
+        "dependedBy": []
+      },
+      {
+        "id": "cordova-plugin-x-socialsharing",
+        "name": "SocialSharing",
+        "version": "5.1.1",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-x-socialsharing",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-x-socialsharing",
+        "selectedState": "Included",
+        "checksum": "b9ebd095",
+        "dependsOn": [],
+        "topLevel": false,
+        "cordovaVersion": ">=3.0.0",
+        "author": "Eddy Verbruggen",
+        "permissions": {
+          "android:name": [
+            "android.permission.WRITE_EXTERNAL_STORAGE"
+          ]
+        },
+        "description": "\n    Share text, images (and other files), or a link via the native sharing widget of your device.\n    Android is fully supported, as well as iOS 6 and up. WP8 has somewhat limited support.\n  ",
+        "data": {},
+        "dependedBy": []
+      },
+      {
+        "id": "cordova-plugin-contacts",
+        "name": "Contacts",
+        "version": "2.1.0",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-contacts",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-contacts",
+        "selectedState": "Included",
+        "checksum": "8e53b8f5",
+        "dependsOn": [
+          "cordova-plugin-compat"
+        ],
+        "topLevel": false,
+        "cordovaVersion": ">=3.0.0",
+        "permissions": {
+          "android:name": [
+            "android.permission.READ_CONTACTS",
+            "android.permission.WRITE_CONTACTS",
+            "android.permission.GET_ACCOUNTS"
+          ]
+        },
+        "description": "Cordova Contacts Plugin",
+        "data": {},
+        "dependedBy": []
+      },
+      {
+        "id": "cordova-plugin-facebook4",
+        "name": "Facebook Connect",
+        "version": "1.7.4",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-facebook4",
+        "gitref": "",
+        "paramvals": {
+          "APP_ID": "298446716871202",
+          "APP_NAME": "sezzwho"
+        },
+        "sourceLocation": "plugins/cordova-plugin-facebook4",
+        "selectedState": "Included",
+        "checksum": "bdc2021e",
+        "dependsOn": [],
+        "topLevel": true,
+        "cordovaVersion": ">=3.0.0",
+        "permissions": {},
+        "description": "\n      This is the official plugin for Facebook in Apache Cordova/PhoneGap!\n\n      The Facebook plugin for Apache Cordova allows you to use the same JavaScript code in your\n      Cordova application as you use in your web application.\n      Docs: https://github.com/Wizcorp/phonegap-facebook-plugin.\n    ",
+        "data": {},
+        "dependedBy": [],
+        "custom": "true"
+      },
+      {
+        "id": "onesignal-cordova-plugin-pgb-compat",
+        "name": "OneSignal Push Notifications PGB Compat",
+        "version": "2.0.10",
+        "originType": "repo",
+        "origin": "https://github.com/one-signal/OneSignal-Cordova-SDK.git",
+        "gitref": "PGB-Compat",
+        "subdir": ".",
+        "paramvals": {},
+        "sourceLocation": "plugins/onesignal-cordova-plugin-pgb-compat",
+        "selectedState": "Included",
+        "checksum": "b0b029a",
+        "dependsOn": [],
+        "topLevel": true,
+        "cordovaVersion": ">=3.3.0",
+        "author": "Josh Kasten",
+        "permissions": {
+          "android:name": [
+            "android.permission.INTERNET",
+            "android.permission.ACCESS_NETWORK_STATE",
+            "android.permission.WAKE_LOCK",
+            "android.permission.VIBRATE",
+            "com.google.android.c2dm.permission.RECEIVE",
+            "$PACKAGE_NAME.permission.C2D_MESSAGE",
+            "android.permission.RECEIVE_BOOT_COMPLETED",
+            "com.sec.android.provider.badge.permission.READ",
+            "com.sec.android.provider.badge.permission.WRITE",
+            "com.htc.launcher.permission.READ_SETTINGS",
+            "com.htc.launcher.permission.UPDATE_SHORTCUT",
+            "com.sonyericsson.home.permission.BROADCAST_BADGE",
+            "com.anddoes.launcher.permission.UPDATE_COUNT",
+            "com.majeur.launcher.permission.UPDATE_BADGE",
+            "com.huawei.android.launcher.permission.CHANGE_BADGE",
+            "com.huawei.android.launcher.permission.READ_SETTINGS",
+            "com.huawei.android.launcher.permission.WRITE_SETTINGS",
+            "android.permission.READ_APP_BADGE",
+            "com.oppo.launcher.permission.READ_SETTINGS",
+            "com.oppo.launcher.permission.WRITE_SETTINGS",
+            "com.amazon.device.messaging.permission.RECEIVE",
+            "$PACKAGE_NAME.permission.RECEIVE_ADM_MESSAGE"
+          ]
+        },
+        "description": "OneSignal is a high volume Push Notification service for mobile apps. In addition to basic notification delivery, OneSignal also provides tools to localize, target, schedule, A/B test, and automate notifications that you send.",
+        "data": {},
+        "dependedBy": [],
+        "custom": "true"
+      },
+      {
+        "id": "onesignal-cordova-dependencies-compat",
+        "name": "OneSignal Android Dependencies",
+        "version": "1.0.0",
+        "originType": "repo",
+        "origin": "https://github.com/OneSignal/OneSignal-Cordova-Dependencies-Compat",
+        "gitref": "",
+        "subdir": ".",
+        "paramvals": {},
+        "sourceLocation": "plugins/onesignal-cordova-dependencies-compat",
+        "selectedState": "Included",
+        "checksum": "9a4a5206",
+        "dependsOn": [],
+        "topLevel": true,
+        "cordovaVersion": ">=3.0.0",
+        "author": "Josh Kasten",
+        "permissions": {},
+        "description": "This addes required Android dependencies needed by OneSignal. Designed for Intel XDK to be used with onesignal-cordova-plugin-pgb-compat. Use onesignal-cordova-plugin instead if you not using Intel XDK.",
+        "data": {},
+        "dependedBy": [],
+        "custom": "true"
+      },
+      {
+        "id": "cordova-plugin-video-editor",
+        "name": "VideoEditor",
+        "version": "1.1.2",
+        "originType": "repo",
+        "origin": "https://github.com/jbavari/cordova-plugin-video-editor.git",
+        "gitref": "",
+        "subdir": ".",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-video-editor",
+        "selectedState": "Included",
+        "checksum": "be28e1c2",
+        "dependsOn": [],
+        "topLevel": true,
+        "cordovaVersion": ">=3.0.0",
+        "permissions": {},
+        "description": "A plugin to assist in video editing tasks",
+        "data": {},
+        "dependedBy": [],
+        "custom": "true"
+      }
+    ],
+    "buildConfigurations": {
+      "Android": {
+        "platform_": "android",
+        "runtime_": "Cordova 3.x",
+        "name_": "Android",
+        "preferences_": {
+          "android-minSdkVersion": "15",
+          "android-targetSdkVersion": "21",
+          "android-installLocation": "auto",
+          "android-signed": true,
+          "Orientation": "portrait"
+        },
+        "isActive_": true,
+        "certificateId_": "_fyDWECF1EuOJcG6MwX2xA2",
+        "appName_": "Sezzwho",
+        "appID_": "ca.sezzwho",
+        "appAccess_": {
+          "mode": "whitelist",
+          "network": [
+            "*"
+          ],
+          "intents": [
+            "http://*/*",
+            "https://*/*",
+            "tel:*",
+            "sms:*",
+            "mailto:*",
+            "geo:*",
+            "market:*"
+          ],
+          "navigation": [],
+          "properties": {}
+        },
+        "icons_": [
+          {
+            "density": "ldpi",
+            "relPath": "package-assets/res/android/Sezzwho_36X36.png",
+            "width": 36,
+            "height": 36
+          },
+          {
+            "density": "mdpi",
+            "relPath": "package-assets/res/android/sezzwho_48X48.png",
+            "width": 48,
+            "height": 48
+          },
+          {
+            "density": "hdpi",
+            "relPath": "package-assets/res/android/sezzwho_72X72.png",
+            "width": 72,
+            "height": 72
+          },
+          {
+            "density": "xhdpi",
+            "relPath": "package-assets/res/android/sezzwho_96X96.png",
+            "width": 96,
+            "height": 96
+          }
+        ],
+        "splashes_": [
+          {
+            "relPath": "package-assets/res/android/320x426.9.png",
+            "density": "ldpi",
+            "height": 426,
+            "width": 320,
+            "orientation": "portrait"
+          },
+          {
+            "relPath": "package-assets/res/android/320x470.9.png",
+            "density": "mdpi",
+            "height": 470,
+            "width": 320,
+            "orientation": "portrait"
+          }
+        ],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "cordovaCLIVersion_": "6.2.0",
+        "crosswalkVersion_": "18",
+        "appVersion_": "0.3.1",
+        "appAuthor_": "Intel XDK",
+        "appDescription_": "Template to develop a Cordova mobile web app using the App Designer UI editor.",
+        "appVersionCode_": "8",
+        "signed_": true
+      },
+      "iOS": {
+        "platform_": "ios",
+        "runtime_": "Cordova 3.x",
+        "name_": "iOS",
+        "preferences_": {
+          "ios-configuration": "adhoc",
+          "deployment-target": "8.0"
+        },
+        "isActive_": false,
+        "certificateId_": "hWgm-h47dkaseBHEGEbN7A2",
+        "appName_": "sezzwho",
+        "appID_": "com.sezzwho",
+        "appAccess_": {
+          "mode": "whitelist",
+          "network": [
+            "*"
+          ],
+          "intents": [
+            "http://*/*",
+            "https://*/*",
+            "tel:*",
+            "sms:*",
+            "mailto:*",
+            "geo:*",
+            "itms:*",
+            "itms-apps:*"
+          ],
+          "navigation": [],
+          "properties": {}
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "iosProvs_": [
+          {
+            "relPath": "package-assets/sezzwho_distribution.mobileprovision",
+            "type": "adhoc"
+          },
+          {
+            "relPath": "package-assets/sezzwho_distribution.mobileprovision",
+            "type": "production"
+          }
+        ],
+        "cordovaCLIVersion_": "6.2.0",
+        "crosswalkVersion_": "18",
+        "appVersion_": "0.0.1",
+        "appAuthor_": "Intel XDK",
+        "appDescription_": "Template to develop a Cordova mobile web app using the App Designer UI editor."
+      },
+      "Windows8": {
+        "platform_": "windows8",
+        "runtime_": "Cordova 3.x",
+        "name_": "Windows8",
+        "preferences_": {
+          "windows-publisher-display-name": "",
+          "windows-publisher-id": ""
+        },
+        "isActive_": false,
+        "certificateId_": "",
+        "appName_": "sezzwho_android",
+        "appID_": "xdk.intel.blank.ad.template",
+        "appAccess_": {
+          "mode": "whitelist",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": [],
+          "properties": {}
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "cordovaCLIVersion_": "6.2.0",
+        "crosswalkVersion_": "18",
+        "appVersion_": "0.0.0.1",
+        "appAuthor_": "Intel XDK",
+        "appDescription_": "Template to develop a Cordova mobile web app using the App Designer UI editor."
+      },
+      "WebApp": {
+        "platform_": "webapp",
+        "runtime_": "W3C",
+        "name_": "WebApp",
+        "preferences_": {},
+        "isActive_": false,
+        "certificateId_": "",
+        "appName_": "blank-cordova-ad",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appAuthor_": "Intel XDK",
+        "appVersion_": "0.0.1"
+      },
+      "Chrome": {
+        "platform_": "chromeos",
+        "runtime_": "W3C on Chrome OS",
+        "name_": "Chrome",
+        "preferences_": {},
+        "isActive_": false,
+        "certificateId_": "",
+        "appName_": "sezzwho_android",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appAuthor_": "Intel XDK",
+        "appVersion_": "0.0.1"
+      },
+      "Firefox": {
+        "platform_": "firefoxos",
+        "runtime_": "W3C on Firefox OS",
+        "name_": "Firefox",
+        "preferences_": {},
+        "isActive_": false,
+        "certificateId_": "",
+        "appName_": "blank-cordova-ad",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appAuthor_": "Intel XDK",
+        "appVersion_": "0.0.1"
+      },
+      "Facebook": {
+        "platform_": "facebook",
+        "runtime_": "W3C on Facebook",
+        "name_": "Facebook",
+        "preferences_": {},
+        "isActive_": false,
+        "certificateId_": "",
+        "appName_": "blank-cordova-ad",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appAuthor_": "Intel XDK",
+        "appVersion_": "0.0.1"
+      },
+      "WP81": {
+        "platform_": "wp81",
+        "runtime_": "Cordova 3.x",
+        "name_": "WP81",
+        "preferences_": {},
+        "isActive_": true,
+        "certificateId_": "",
+        "appName_": "sezzwho_android",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appVersion_": "0.0.0.1",
+        "cordovaCLIVersion_": "6.2.0",
+        "appAuthor_": "Intel XDK"
+      }
+    },
+    "gameAssetDirectory": "asset",
+    "gameMetadata": {},
+    "projectTags": [
+      "XDK-disallow-legacy-whitelist"
+    ],
+    "testDirectory": "test"
+  }
+}

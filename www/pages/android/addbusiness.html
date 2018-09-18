@@ -1,0 +1,75 @@
+
+  <div data-page="business" class="page">
+	  <div class="navbar">
+  <div class="navbar-inner">
+    <div class="left sliding"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+    <div class="center sliding">Review a Business</div>
+    <div class="right"><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a></div>
+  </div>
+</div>
+
+    <div class="page-content">
+     <div class="content-block">
+  <div class="chip">
+    <div class="chip-media"><img src="{{avatar}}"></div>
+    <div class="chip-label">{{username}}</div>
+  </div>
+
+			<div class="list-block">
+			  <ul>
+				<!-- Smart select item -->
+				<li>
+				  <!-- Additional "smart-select" class -->
+				  <a href="#" class="item-link smart-select" data-open-in="picker" data-picker-height="400px">
+					<!-- select -->
+					<select name="businesstype" id="businestype">
+				
+
+																			<option value="Restaurant">Restaurant</option>
+
+																			<option value="Store">Store</option>
+
+																			<option value="Service">Service</option>
+
+																			<option value="Marketing">Product</option>
+
+																			<option value="Trades">Brand</option>
+
+																			<option value="Online">Bar/Pub</option>
+
+																			<option value="Accomodation">Accomodations</option>
+
+																			<option value="Housing">Housing</option>
+
+																			<option value="Other">Other</option>
+					</select>
+					<div class="item-content">
+					  <div class="item-inner">
+						<!-- Select label -->
+						<div class="item-title">Business Type</div>
+						<!-- Selected value, not required -->
+						<div class="item-after"></div>
+					  </div>
+					</div>
+				  </a>
+				</li>
+				<!-- Another smart selects or list view elements -->
+				<li>
+      				<a href="#" id="autocomplete-standalone-ajax" class="item-link item-content autocomplete-opener">
+						 <input type="hidden">
+                    	<div class="item-inner">
+						  <div class="item-title">Location</div>
+						  <div class="item-after"></div>
+						 </div>
+                  	</a>
+                </li>
+			  </ul>
+			</div>   
+            
+           <input type="hidden" id="post-review-content" val="">
+            <p><a href="#" id="auto-post-a-review" class="button button-fill color-lightgreen" disabled="disabled"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+ Post a recommendation</a></p>
+		
+		<div class="addbusiness"></div>
+    </div>
+  </div>

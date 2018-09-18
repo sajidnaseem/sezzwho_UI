@@ -1,0 +1,93 @@
+
+a, a:visited {
+  color: #4099FF;
+  text-decoration: none;
+}
+
+.notification-template .wrapper {
+  margin: 5px auto;
+  width: 100%;
+  height: 121px;
+  background: #fff;
+  /*border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ddd;*/
+  overflow: hidden;
+}
+
+.notification-template img {
+  float: left;
+  width: 50px;
+  height: 50px;
+  border-right: 1px solid #eee;
+  border-radius: 50% 50%;
+  margin: 9px;
+}
+.notification-template .list-block .item-content{
+	padding-left:0px;
+}
+.notification-template article {
+  float: right;
+  padding: 14px 5px 0px 5px;
+  /*width: 215px;*/
+  width: -moz-calc(100% - 68px);
+  width: -ms-calc(100% - 68px);
+  width: -webkit-calc(100% - 68px);
+  width: calc(100% - 68px);
+  border-bottom: 1px solid #8bc34a;
+  height:90px;
+}
+
+.notification-template h2 {
+  margin: 1px 0 7px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.notification-template p {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+.notification-template nav {
+  float: right;
+  width: 100%;
+}
+
+.notification-template nav ul li {
+  float: right;
+  display: inline-block;
+  padding-top:6px;
+}
+
+.notification-template nav ul li a {
+  margin: -3px 8px;
+  font-size: 1.9rem;
+}
+
+.notification-template nav ul li .fontawesome-retweet, nav ul li .fontawesome-reply {
+  color: #aaa;
+}
+
+.notification-template nav ul li .fontawesome-star {
+  color: #4099FF;
+}
+
+.notification-template nav li.time {
+  float: left;
+  color: #aaa;
+}
+
+.notification-template .list-block{
+	margin: 0px;
+}
+.notification-template article h2 {
+font-size: 13px;
+}
+article p {
+font-size: 11px !important;
+line-height: 11px !important;
+}
+a.fa.fa-trash.theme-red {
+color: #f44336;
+}

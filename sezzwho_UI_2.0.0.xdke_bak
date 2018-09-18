@@ -1,0 +1,14 @@
+{
+  "project": {
+    "projectSettingsVersion": "2.0.0",
+    "currentBuildConfiguration": "Android-Crosswalk",
+    "projectFiles": {},
+    "projectDirectories": {},
+    "initialAutoPluginCount": 0,
+    "currentService": {
+      "methodapi": "search",
+      "endPoint": "Search",
+      "service": "rottentomatoes"
+    }
+  }
+}

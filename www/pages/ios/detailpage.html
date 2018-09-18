@@ -1,0 +1,117 @@
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left sliding">
+                <a href="#" class="back link color-white"> <i class="icon icon-back color-white"></i><span>back</span></a>
+            </div>
+            <div class="center sliding"><span class="color-black">sezz</span><span class="color-white">who</span></div>
+            <div class="right">
+                <a href="#" class="link icon-only open-panel"> <i class="icon icon-bars color-white"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="pages navbar-through">
+
+    <div data-page="detailPage" class="page cached toolbar-fixed">
+    
+        <!-- Speed Dial Wrap -->
+        {{#js_compare "this.accountType === 'Business'"}}
+        <div class="speed-dial business-recording">
+            <!-- FAB inside will open Speed Dial actions -->
+            <a href="#" class="floating-button">
+                <!-- First icon is visible when Speed Dial actions are closed -->
+                <i class="fa fa-video-camera fa-lg" aria-hidden="true"></i>
+                <!-- Second icon is visible when Speed Dial actions are opened -->
+                <i class="fa fa-times fa-lg color-white"></i>
+            </a>
+            <!-- Speed Dial Actions -->
+            <div class="speed-dial-buttons">
+                <!-- First Speed Dial button -->
+              <!--  <a href="#" class="sezzwho-searchbar">
+                    <i class="fa fa-search"></i>
+                </a>-->
+                <!-- Second Speed Dial  button -->
+                <a href="#" data-popup=".popup-record" class="link record-activity open-popup-business background-red"><i  class="fa fa-video-camera"></i></a>
+            </div>
+        </div>
+        {{/js_compare}}
+        <!-- End of Speed Dial -->
+        <!-- Search Bar -->
+        {{#js_compare "this.accountType === 'Personal'"}}
+        <form class="searchbar" id="detail-search">
+            <div class="searchbar-input"> <input type="search" placeholder="Search">
+                <a href="#" class="searchbar-clear"></a>
+            </div> <a href="#" class="searchbar-cancel">Cancel</a> 
+        </form>
+        {{/js_compare}}
+       {{#js_compare "this.accountType === 'Business'"}}
+        <div id="tab-detial" class="toolbar tabbar tabbar-labels">
+            <div class="toolbar-inner">
+                <!-- Link to 1st tab, active -->
+                <a href="#tab-personal-activiy" class="tab-link color-black">
+                  <i class="fa fa-briefcase" aria-hidden="true"></i>
+                  <span class="tabbar-label">Business</span>
+                </a>
+                <!-- Link to 2nd tab -->
+                <a href="#tab-personal-review" class="tab-link active color-black">
+                   <i class="fa fa-info" aria-hidden="true"></i>
+                   <span class="tabbar-label">What People Think</span>
+                </a>
+                <!-- Link to 3rd tab -->
+            </div>
+        </div>
+        {{/js_compare}}
+        <!-- Personal Page-->
+        {{#js_compare "this.accountType === 'Personal'"}}
+         <div id="tab-personal-activiy" class="page-content infinite-scroll-detail-{{this.id}} infinite-scroll tab active">
+                    <div class="content-block1">
+                        <div class="user-profile-header-detail-{{this.id}}"></div>
+                    </div>
+                    <div class="content-block1">
+                        <div class="presonal-content-detail-{{this.id}}"></div>
+                    </div>
+                    <!-- Preloader -->
+                    <div class="infinite-scroll-preloader-detail-page-{{this.id}}"><center> loading ... </center><br>
+                        <div class="preloader-custom"></div>
+                    </div>
+                </div>
+        {{/js_compare}}
+        <!-- Business Page  coding -->
+        {{#js_compare "this.accountType === 'Business'"}}
+        <div class="tabs-swipeable-wrap">
+            <!-- Tabs, tabs wrapper -->
+            <div class="tabs">
+                <div id="tab-personal-activiy" class="page-content infinite-scroll-detail-{{this.id}} infinite-scroll tab">
+                    <div class="content-block1">
+                        <div class="user-profile-header-detail-{{this.id}}"></div>
+                    </div>
+                    <div class="content-block1">
+                        <div class="presonal-content-detail-{{this.id}}"></div>
+                    </div>
+                    <!-- Preloader -->
+                    <div class="infinite-scroll-preloader-detail-page-{{this.id}}"><center> loading ...</center> <br>
+                        <div class="preloader-custom"></div>
+                    </div>
+                </div>
+                
+                 <!-- New Tab -->
+                <div id="tab-personal-review" class="page-content infinite-scroll-review-{{this.id}} infinite-scroll tab active">
+                    <div class="content-block1">
+                        <div class="user-profile-header-detail-{{this.id}}"></div>
+                    </div>
+                    <div class="content-block1">
+                        <div class="presonal-content-review-{{this.id}}"></div>
+                    </div>
+                    <!-- Preloader -->
+                    <div class="infinite-scroll-preloader-review-page-{{this.id}}"><center> loading ...</center> <br>
+                        <div class="preloader-custom-review"></div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- End Tab-->
+        </div>
+        <!-- End Swipeable -->
+    
+        {{/js_compare}}
+    </div>
+</div>

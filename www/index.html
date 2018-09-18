@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    	<meta name="apple-mobile-web-app-capable" content="yes">
+    	<link rel="stylesheet" type="text/css" href="framework7/css/framework7.material.min.css">
+      	<link rel="stylesheet" type="text/css" href="framework7/css/framework7.material.colors.min.css"> 
+	  	<!--<link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">--> 
+    	<!--<link rel="stylesheet" type="text/css" href="css/app.css">
+      	<link rel="stylesheet" type="text/css" href="css/notification/style.css"> -->
+        <link rel="stylesheet" href="https://assets-cdn.ziggeo.com/v1-r25/ziggeo.css" />
+	  	<link rel="stylesheet" type="text/css" href="lib/css/style.min.css">
+	  	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <!-- 1. skin -->
+        <link rel="stylesheet" href="http://releases.flowplayer.org/6.0.5/skin/minimalist.css">
+		<!--<link rel="stylesheet" href="http://releases.flowplayer.org/7.0.2/skin/skin.css">-->
+        <!-- your plugin stylesheet -->
+        <!--<link rel="stylesheet" href="http://releases.flowplayer.org/asf/flowplayer.org/1.1.2/asf.min.css" media="screen">-->
+        <!-- Latest compiled and minified CSS -->
+        <script type="application/javascript" src="lib/jquery.min.js"></script>
+		<script src="cordova.js"></script>
+		<script src="xdk/init-dev.js"></script>
+		<script type="application/javascript" src="js/init-app.js"></script>
+		<script type="application/javascript" src="framework7/js/framework7.min.js"></script>
+
+  </head>
+
+  <body class="theme-lightgreen">
+
+ <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+      <div class="content-block">
+        <p><img src="images/mobile_logo.png" width="185px"></p>
+         <div class="list-block">
+      <ul>
+        <li class="sezzwho-login-menu">
+          	<a href="#" class="item-link back close-panel" >
+            <div class="item-content">
+            <div class="item-media"><i class="fa fa-sign-in fa-lg color-lightgreen"></i></div>
+            <div class="item-inner">
+            <div class="item-title">Login</div>
+            </div>
+            </div>
+            </a>
+        </li>
+        <li class="sezzwho-registration-menu">
+          	<a href="pages/android/register.html" class="item-link close-panel">
+            <div class="item-content">
+            <div class="item-media"><i class="fa fa-chevron-circle-up fa-lg color-bluegray"></i></div>
+            <div class="item-inner">
+            <div class="item-title">Registration</div>
+            </div>
+            </div>
+            </a>
+        </li>
+        <li class="sezzwho-lost-password-menu">
+          	<a href="pages/android/lost-password.html" class="item-link close-panel">
+            <div class="item-content">
+            <div class="item-media"><i class="fa fa-key fa-lg color-brown"></i></div>
+            <div class="item-inner">
+            <div class="item-title">Lost Password</div>
+            </div>
+            </div>
+            </a>
+        </li>
+        <li class="sezzwho-profile-menu">
+          	<a href="pages/android/profile.html" class="item-link close-panel">
+            <div class="item-content">
+            <div class="item-media"><i class="fa fa-user fa-lg color-lightgreen"></i></div>
+            <div class="item-inner">
+				<div class="item-title">Profile</div>
+            </div>
+            </div>
+            </a>
+        </li>
+         <li class="sezzwho-setting-menu">
+          	<a href="pages/android/setting.html" class="item-link close-panel">
+            <div class="item-content">
+            <div class="item-media"><i class="fa fa-cog fa-lg color-brown"></i></div>
+            <div class="item-inner">
+				<div class="item-title">Settings</div>
+            </div>
+            </div>
+            </a>
+        </li>
+        <li class="sezzwho-change-password-menu">
+          	<a href="pages/android/account-setting.html" class="item-link close-panel">
+            <div class="item-content">
+            <div class="item-media"><i class="fa fa-key fa-lg color-lime"></i></div>
+            <div class="item-inner">
+				<div class="item-title">Password</div>
+            </div>
+            </div>
+            </a>
+        </li>
+		<!--<li class="sezzwho-social-menu">
+          	<a href="#"  class="item-link">
+            <div class="item-content">
+            <div class="item-media"><i class="fa fa-external-link fa-lg color-pink"></i></div>
+            <div class="item-inner">
+				<div class="item-title">Social Invites</div>
+            </div>
+            </div>
+            </a>
+        </li>-->
+          <li class="sezzwho-about-menu">
+          	<a href="pages/android/about.html" class="item-link close-panel">
+            <div class="item-content">
+            <div class="item-media"><i class="fa fa-info-circle fa-lg color-cyan"></i></div>
+            <div class="item-inner">
+				<div class="item-title">About</div>
+            </div>
+            </div>
+            </a>
+        </li>
+        <li class="sezzwho-logout-menu">
+          	<a href="#" class="item-link close-panel">
+            <div class="item-content">
+            <div class="item-media"><i class="fa fa-sign-out fa-lg color-red"></i></div>
+            <div class="item-inner">
+            <div class="item-title">Logout</div>
+            </div>
+            </div>
+            </a>
+        </li>
+        </ul>
+        </div>
+       <!-- Item Content-->  
+       <p class="sezzwho-info">Recommend a great product, service and business share it with friends. Find cool new places and things next door or around the world and let everyone see what’s on your mind. Sezzwho? Sezzyou!</p>
+       
+       
+      <p><center> © <script type="text/javascript">document.write(new Date().getFullYear());</script> Sezzwho</center></p>
+      </div>
+    </div>
+    <div class="views">
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+       
+        <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-fixed">
+          <!-- Page, "data-page" contains page name -->
+          <div data-page="index" class="page">
+            
+			   <!-- Top Navbar-->
+            <div class="navbar">
+              <div class="navbar-inner">
+              <div class="left"> </div>
+                <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                <div class="center sliding"><span class="color-black">sezz</span><span class="color-white">who</span></div>
+                <div class="right">
+                  <!-- 
+                    Right link contains only icon - additional "icon-only" class
+                    Additional "open-panel" class tells app to open panel when we click on this link
+                  -->
+                  <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+                </div>
+              </div>
+            </div>
+	
+    <!-- Views -->
+			
+			  <!-- Scrollable page content -->
+             <div class="page-content" style="margin-top:9px;">
+                  <!-- <div class="center welcome-title"><p>Welcome to</p><p> sezzwho</p></div>-->
+				 <div class="center welcome-logo"><img src="images/mobile_logo.png"></div>
+				
+              <!-- Link to another page -->
+                <div class="list-block">
+					
+                <form id="my-form2" class="list-block store-data form-hide">        
+                    <ul>
+                            <!-- Text inputs -->
+                            <li>
+                              <div class="item-content">
+                                <div class="item-media"><i class="fa fa-user fa-lg color-lightgreen" aria-hidden="true"></i></div>
+                                <div class="item-inner">
+                                  <div class="item-title label">Username/Email</div>
+                                  <div class="item-input">
+                                    <input class="sezzwho-username" type="text" placeholder="Username/Email" required>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="item-content">
+                                <div class="item-media"><i class="fa fa-lock fa-lg color-lightgreen" aria-hidden="true"></i></div>
+                                <div class="item-inner">
+                                  <div class="item-title label">Password</div>
+                                  <div class="item-input">
+                                    <input  class="sezzwho-password" type="password" placeholder="Password" required>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                <div class="item-media"><i class=""></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label"></div>
+                                     <div class="item-inputs">
+                                    <input type="checkbox" value="remember-me" id="remember_me">
+                                         Remember me
+                                  </div>
+                                  
+                                 
+                                </div>
+                              </div>
+                            </li>
+                        <li>
+                            <div class="row">
+                            <!-- Each "cell" has col-[widht in percents] class -->
+                            <div class="col-100"><div class="alert alert-danger" role="alert"></div></div>
+                            </div>   
+                       </li>
+                    </ul>
+                    <div class="content-block">
+                        <div><a href="#" class="get-storage-data button-raised button button-fill color-lightgreen active-state"><i class="fa fa-sign-in"></i> Login</a></div>
+                          <center> <strong> or </strong></center>
+						<div class="fb event listening button-raised button" onclick="login();"><i class="fa fa-facebook" aria-hidden="true"></i> Login with Facebook</div>
+						<p></p>
+						<div><a href="pages/android/register.html" class="button-raised button button-fill color-lightgreen"><i class="fa fa-chevron-circle-up "></i> Sign Up</a></div>
+
+                    </div>
+                    </form>
+                    	
+                </div>
+                <!-List block-->
+            </div>         
+			   
+
+          </div> <!-- page Index -->
+		
+          
+        </div> <!-- Pages -->
+      </div>
+    </div>
+     
+   <!--  Record Pop Start Here-->
+  <div id="record-slidedown" class="popup popup-record">
+      <div class="row no-gutter">
+          <div class="col-50">
+             <a href="#" class="close-popup button button-fill color-red"><i class="fa fa-times-circle"></i> Close</a>
+          </div>
+          <div class="col-50">
+          <a href="#" class="button button-fill window-minimize"><i class="fa fa fa-minus" aria-hidden="true"></i> Minimize</a>
+          </div>
+      </div>
+		<div class="content-block">
+			<div class="row">
+                    <div class="col-100">
+                            <div class="recording-userinfo">
+                                <div class="card-header no-border">
+                                <div class="recored-facebook-avatar"><img src="" width="34" height="34"></div>
+                                <div class="whats-new-info"></div>
+                                </div>
+                            </div>
+                    </div>
+                   <div class="col-100" >
+                        <!--<center>
+                       <i onclick="sezzwhoApp.personalFeeds.recordVideo('whats-new')" id="record" class="fa fa-video-camera fa-4x"></i>
+                                <p class="tabbar-label">SEZZME</p>
+    
+                        </center> 
+                        <input type="hidden" id="videocontent">
+                        <div class="demo-progressbar-load-hide">
+                        <p style="height:2px"></p>
+                        </div> 
+                        
+                        <button class="btn large" onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Library</button> -->
+                        <div class="ziggeo-sezzwho-container">
+                       <!--<div id="ziggeo_replace_me"></div>--> 
+                       
+						 <ziggeo ziggeo-id="ziggeo_replace_me" 
+                            ziggeo-limit=30
+							ziggeo-width=320
+							ziggeo-height=240
+                            ziggeo-perms ='allowupload'
+                            ziggeo-auto_crop= true
+							ziggeo-responsive= true
+                            ziggeo-limit_upload_size = 67060288
+                            ziggeo-auto_crop = true
+							ziggeo-recording_width=1280 
+							ziggeo-recording_heigth=720
+							ziggeo-video_profile='a9068e8d98ff6d36dd3ec66f35986d0c'
+                            ziggeo-effect_profile='ba51b5e2f51692f07abe8f49bd4b56c3' 
+							ziggeo-tags='Wordpress, sezzwho' >
+						</ziggeo> 	
+                       <div class="color-red"><center><strong>30 seconds or less</strong></center></div> 
+					   </div>
+                        <input type="hidden" id="videocontent">
+                       
+					
+							
+                    </div> 
+                    <!-- Ziggeo Integration -->
+                    
+                    
+                    
+                </div>
+              	<div class="list-block">
+                  <ul>
+                    <li>
+                        <div class="item-content">
+                              <div class="item-media"><i class="fa fa-header fa-lg color-lightgreen" aria-hidden="true"></i></div>
+                              <div class="item-inner">
+                                  <div class="item-input">
+                                   <input type="text" placeholder="Video Title (Required)" id="video-title" class="record-input">
+                                  </div>
+                              </div>
+                        </div>
+                    </li>
+                    <li> 
+                        <div class="item-content">
+                                <div class="item-media"><i class="fa fa-tag fa-lg color-orange" aria-hidden="true"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        <input type="text" placeholder="#Hashtag or @username (Required)" id="autocomplete-user" class="record-input">
+                                        (hint: #xyx)
+                                    </div>
+                                </div>
+                        </div>
+                    </li>
+                   <!-- <li>
+                     <a href="#" id="autocomplete-user-standalone" class="item-link item-content autocomplete-opener">
+                        <input type="hidden">
+                        <div class="item-inner">
+                          <div class="item-title">Mention</div>
+                          <div class="item-after"></div>
+                        </div>
+                      </a>
+                    </li> -->
+                    <li>
+                        <div class="item-content">    
+                                <div class="item-media"><i class="fa fa-globe fa-lg color-indigo" aria-hidden="true"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        <input type="text" placeholder="www.xyz.com (Optional)" id="autocomplete-website" class="record-input">
+                                        (hint: www.xyz.com)
+                                    </div>
+                                </div>
+                        </div>      
+                    </li>
+                    <!--<li>
+                      <div class="item-content">
+                        <div class="item-media"><i class="fa fa-magic"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title label">Auto Post</div>
+                          <div class="item-input">
+                            <label class="label-switch auto-post">
+                              <input type="checkbox">
+                              <div class="checkbox"></div>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </li> -->        
+                  </ul>
+                </div>
+                <div class="row">
+                <div class="col-100">
+					<div id="review-rating">
+						Promote it: <img src="images/star_off.png" class="star" id="star1" alt="star" />
+						<img src="images/star_off.png" class="star" id="star2" alt="star" />
+						<img src="images/star_off.png" class="star" id="star3" alt="star">
+						<img src="images/star_off.png" class="star" id="star4" alt="star">
+						<img src="images/star_off.png" class="star" id="star5" alt="star">
+					</div><br/>
+				</div>
+				<input type="hidden" id="rating">
+                <input type="hidden" id="videobusiness">
+				<!--<div class="col-100">
+					<button id="add-business" class="button button-fill lightgreen" style="width:100%;" disabled><i class="fa fa-plus"></i> Add a location</button>
+				</div><br><br>
+				 <div class="col-100">
+					<button id="aw-whats-new-submit" class="button button-fill lightgreen" style="width:100%;" disabled><i class="fa fa-pencil"></i> Post Update</button>
+				 </div>	
+                 <div class="col-100">
+                 <button id="post-business" class="button button-fill lightgreen" style="width:100%;" disabled><i class="fa fa-video-camera"></i> Post Video</button>
+                 </div> -->
+                  <div class="col-100">
+					<button id="auto-add-business" class="button button-fill lightgreen" style="width:100%;" disabled><i class="fa fa-plus"></i> Add a location</button>
+				</div><br><br>
+                 <div class="col-100">
+					<button id="auto-aw-whats-new-submit" class="button button-fill lightgreen" style="width:100%;" disabled><i class="fa fa-pencil"></i> Post Update</button>
+				 </div>	
+                 <div class="col-100">
+                 <button id="auto-post-business" class="button button-fill lightgreen" style="width:100%;" disabled><i class="fa fa-video-camera"></i> Post Video</button>
+                 </div>
+                 
+			</div>            
+		</div>
+  </div>
+     <!--  Record Pop End Here-->
+      
+      <!-- Edit Activity Popup here -->
+      
+      
+      <div class="popup popup-re-record">
+            <div class="content-block">
+              <p><a href="#" class="close-popup"><i class="fa fa-times-circle"></i> Close</a></p>
+              <div id="sezzwho-re-record"> </div>
+            </div>
+      </div>
+          
+      
+      
+      <!-- Closed Edit Activity Pop up here -->
+      
+      <!-- Comment post picker modal-->
+       <!-- Picker -->
+              	<div class="picker-modal picker-1">
+                     <div class="toolbar">
+                      <div class="toolbar-inner">
+                        <div class="left"></div>
+                        <div class="right"><a href="#" class="close-picker color-red"><i class="fa fa-times-circle fa-2x color-red" aria-hidden="true"></i></a></div>
+                      </div>
+                    </div>
+                    <div class="picker-modal-inner">
+                      <div class="content-block">
+                       <div class="comment-progressbar-load-hide">
+                        <p style="height:2px"></p>
+                        </div>
+                        <input type="hidden" id="comment-id" >
+                        <button id="post-comment"  class="button button-fill lightgreen" style="width:100%;" disabled>Post Comment</button>
+                      </div>
+                    </div>
+	  			</div>
+                      
+      <!-- closed picker modal-->
+      <!-- Text Comment-->
+          <div class="popup comment-popup">
+            <div class="view navbar-fixed">
+                <div class="page">
+                    <div class="navbar">
+                        <div class="navbar-inner">
+                            <div class="left"><a href="#" class="link close-popup">Cancel</a></div>
+                            <div class="center">Text Comment</div>
+                            <div class="right"><a id="post-comment-text" href="#" class="link color-orange" disabled>Send</a></div>
+                        </div>
+                    </div>
+                    <div class="page-content message-content">
+        
+                        <div class="message-input">
+                            <textarea id="comment-textarea" placeholder="Post your comment here"></textarea>
+                        </div>
+        
+                        <div class="message-tools">
+                            <ul>
+                            <li class="camera image-upload"><i class="icon ios7-camera-outline"></i></li>
+                            <li class="photoalbum image-upload"><i class="icon ios7-pic"></i></li>
+                            <li><i class="icon ios7-emotion"></i></li>
+                            <li><i class="icon ios7-at-outline"></i></li>
+                            <li class="get-position"><i class="icon ios7-dingxiang"></i></li>
+                            </ul>
+                        </div>
+                        <div id="geoInfo" class="geo-info" style="display: none;"><div class="location">Permission denied</div><div class="close"><i class="icon ios7-close"></i></div></div>
+                        <div id="uploadPicPreview" class="upload-pic-preview"><img src="" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     <!-- Text Comment Close -->
+      
+      <!--  refer picker  -->
+      
+        	<div class="picker-modal picker-refer">
+                     <div class="toolbar">
+                      <div class="toolbar-inner">
+                        <div class="left"></div>
+                        <div class="right"><a href="#" class="close-picker">done</a></div>
+                      </div>
+                    </div>
+                    <div class="picker-modal-inner">
+                              <div class="content-block">
+                                  <div class="list-block">
+                                  <ul>
+                                    <!-- Text inputs -->
+                                    <li>
+                                    <div class="item-content">
+                                      <!--  <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                        <div class="item-inner">
+                                          <div class="item-title label">Username</div>
+                                          <div class="item-input">
+                                            <input type="text" placeholder="username" id="autocomplete-user">
+                                          </div>
+                                        </div> -->
+										  <a href="#" id="autocomplete-standalone" class="item-link item-content autocomplete-opener">
+											<input type="hidden">
+											<div class="item-inner">
+											  <div class="item-title">Refer User</div>
+											  <div class="item-after"></div>
+											</div>
+										  </a>
+                                      </div>
+                                     </li>
+                                  </ul>
+                                </div>        
+                        <input type="hidden" id="referuser" >
+                        <button id="post-comment"  class="button button-fill lightgreen" style="width:100%;" disabled>Refer</button>
+                      </div>
+                    </div>
+	  			</div>
+      
+      
+     <!-- close refer picker -->
+       <!-- Search popup-->
+    <div class="popup popup-search">
+      <div class="view">
+        <div class="pages">
+          <div class="page navbar-fixed">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <form class="searchbar custom-search">
+                  <div class="searchbar-input">
+                    <input type="search" placeholder="Search"><a href="#" class="searchbar-clear"></a>
+                    <div class="preloader preloader-white"></div>
+                  </div>
+                </form>
+                
+                </div>
+            </div>
+              
+               <!-- Bottom Toolbar-->
+                <div class="toolbar tabbar">
+                    <div class="toolbar-inner">
+                        <a href="#tab-member" class="tab-link active">
+                            <i class="fa fa-users"></i>
+                            <span class="tabbar-label">Users</span>
+                        </a>
+                        <a href="#tab-activity" class="tab-link">
+                            <i class="fa fa-rss-square"></i>
+                            <span class="tabbar-label">Videos</span>
+                        </a>
+                        
+                    </div>
+                </div>
+               <!-- Tabs swipeable wrapper, required to switch tabs with swipes -->
+              <div class="tabs-swipeable-wrap">
+                  <!-- Tabs, tabs wrapper -->
+                  <div class="tabs">
+                     <div id="tab-member"  class="page-content tab active">
+                          <div class="list-block">
+                          <br>
+                            <ul class="search-results"></ul>
+                          </div>
+                        </div>
+                      <div id="tab-activity" class="page-content tab">
+                        <br/><br/>
+                        <div class="search-results-activity"></div>
+                      </div>
+                  </div>
+                  <!-- End Tab-->
+            </div>
+              <!-- End Swipeable -->
+          </div>
+        </div>
+      </div>
+    </div>
+      
+
+    <!-- Links popover -->
+  <div class="popover popover-links emotion">
+    <div class="popover-angle"></div>
+    <div class="popover-inner">
+      <div class="list-block">
+          <div class="toolbar tabbar tabbar-labels">
+                <div class="toolbar-inner">
+                    <a href="#" class="tab-link active">
+                        <i class="fa fa-heart fa-2x">
+                        <span class="badge bg-green">1</span>
+                        </i>
+                        <span class="tabbar-label">Love it</span>
+                    </a>
+                    <a href="#" class="tab-link">
+                        <i class="fa fa-check-square-o fa-2x">
+                            <span class="badge bg-blue">5</span>
+                        </i>
+                        <span class="tabbar-label">Excellent</span>
+                    </a>
+                    <a href="#" class="tab-link">
+                        <i class="fa fa-thumbs-o-up fa-2x">
+                        <span class="badge bg-red">7</span>
+                        </i>
+                        <span class="tabbar-label">Like it</span>
+                    </a>
+                    <a href="#" class="tab-link">
+                        <i class="fa fa-line-chart fa-2x">
+                        <span class="badge bg-orange">0</span>
+                        </i>
+                        <span class="tabbar-label">Promote</span>
+                    </a>
+                </div>
+			</div>
+      </div>
+    </div>
+  </div>
+<!-- Close Link Popover-->
+      
+      <!-- Templates-->
+    <script id="search-results-template" type="text/template">
+      {{#each this}}
+      		  <li data-woeid="{{user_id}}" data-user="{{username}}" >
+				<div class="item-content">
+				 <div class="item-media"><a href="pages/android/detailpage.html?id={{user_id}}&username={{display_name}}&accountType={{account_type}}" data-context='{"accountType":"{{account_type}}","id":"{{user_id}}" }' class="close-popup"><img src="{{avatar}}" width="44" onError="this.onerror=null;this.src='images/gravatar.png';"></a></div>
+					<div class="item-inner">
+					  <div class="item-title-row">
+						<div class="item-title">@{{username}}</div>
+					  </div>
+					  <div class="item-subtitle">
+							<div class="follow search-follow"  data-type="{{user_id}}">{{#if is_follow}} <span data-type="unfollow-{{user_id}}"  class="stopfollow"><i class="fa fa-user-times"></i> Following </span> {{else}} <span data-type="follow-{{user_id}}" class="startfollow"><i class="fa fa-user-plus"></i> Follow </span> {{/if}}</div>
+					</div>
+					</div>
+				  </div>
+			  </li>
+      {{/each}}
+    </script>
+              
+  <script type="text/template" id="user-profile-template">
+	  
+ 
+<div class="demo-card-header-pic">
+  <div style="background-image:url({{avatar}}); min-height:229px; background-size:cover;background-position:center center;" valign="bottom" class="card-header color-white no-border">
+  {{#if this.follow}}<a href="pages/android/profile.html" ><i class="fa fa-camera fa-3x color-red" aria-hidden="true"></i></a> {{else}}
+				<div class="follow follow-button" data-type="{{id}}" ontouchstart="sezzwhoApp.homeModules.blindEvent()"> <div class="icon-twitter"></div> {{#if is_follow}} <span data-type="unfollow-{{id}}"  class="stopfollow"><i class="fa fa-user-times"></i> Following </span> {{else}} <span data-type="follow-{{id}}" class="startfollow"><i class="fa fa-user-plus"></i> Follow </span> {{/if}}</div>
+				 {{/if}}
+  
+  </div>
+  <div class="sezzwho-header-content">
+  <div class="card-content">
+    <div class="card-content-inner">
+      	<!-- <img src="{{avatar}}" alt="avatar" class="" width="48" height="48"> -->
+       <!--<i class="fa fa-user fa-4x color-lightgreen" aria-hidden="true"></i> -->
+	   <p class="profile-username">@{{username}}</p>
+	   <div class="clearfix"></div>
+		
+		<div class="row  no-gutter">
+			<div class="col-50">
+				<p><i class="fa fa-television" aria-hidden="true"></i>{{#js_compare "this.website==='http://'"}}<a href="https://sezzwho.com/" class="external"> {{else}}<a href="{{website}}" class="external">{{/js_compare}} Go to Website </a> </p>
+				<p>{{#js_compare "this.address===''"}} {{else}}<i class="fa fa-map-marker" aria-hidden="true"></i>  {{address}} {{/js_compare}}</p>
+			</div>
+			<div class="col-50"><p>{{#js_compare "this.bio ===''"}} Short description of yourself up to 50 words or less {{else}} {{bio}}{{/js_compare}}</p></div>
+		</div>
+		
+	</div>
+	
+  </div>
+  
+  <div class="sezzwho-card-footer">
+    <div class="row">
+    <!-- Each "cell" has col-[widht in percents] class -->
+    <div class="col-33"><a href="#" class="button button-fill color-orange button-raised">POSTS <input type="hidden" class="post-count-hidden" value="{{post_count}}"><span class="profile-counter">{{js "sezzwhoApp.mainInits.countFormat(this.post_count)"}}</span></a></div>
+    <div class="col-33"><a href="pages/android/followerlist.html?id={{id}}" data-context='{"avatar":"{{avatar}}","username":"{{username}}","follower":"{{follower}}"}'  class="button button-fill color-lightgreen button-raised">FOLLOWERS <input type="hidden" class="follower-count-hidden" value="{{follower}}"><span class="profile-counter">{{js "sezzwhoApp.mainInits.countFormat(this.follower)"}}</span></a></div>
+    <div class="col-33"><a href="pages/android/followinglist.html?id={{id}}" data-context='{"avatar":"{{avatar}}","username":"{{username}}","following":"{{following}}"}' class="button button-fill color-indigo button-raised">FOLLOWING <input type="hidden" class="following-count-hidden" value="{{following}}"><span class="profile-counter">{{js "sezzwhoApp.mainInits.countFormat(this.following)"}}</span></a></div>
+</div>
+  </div>
+  </div>
+</div>
+	  
+	  </script>
+      
+          
+      <!--   Activity template  new Version  -->  
+   <script type="text/template" id="comment-ziggeo-template">
+   {{#each ../item}}
+   {{#if type}}
+   <div class="card facebook-card activity-{{id}}" {{#if popular}}  id="popular-{{id}}"  {{else}} id="activity-{{id}}" {{/if}} >
+       	<div class="card-header no-border">
+            <div class="facebook-avatar">
+			<a href="pages/android/detailpage.html?id={{user_id}}&username={{nickname}}&accountType={{account_type}}" data-context='{"accountType":"{{account_type}}","id":"{{user_id}}"}' class="close-popup"><img src="{{avatar}}" width="34" height="34" onError="this.onerror=null;this.src='images/gravatar.png';"></a>
+	   		</div>
+            <div class="facebook-name">{{action}}</div>
+            <div class="facebook-date">{{time}}</div>
+     	</div>
+            <div class="card-content">
+            {{title}}
+			 
+		 
+		  <div id="sezzwho-image-backgrounds"><a href="pages/android/videodetails.html" data-context='{"page":"{{page}}","name":"{{name}}","ziggeocode":"{{ziggeocode}}","id":"{{id}}","user_id":"{{user_id}}","avatar":"{{avatar}}","action":"{{action}}","time":"{{time}}","username":"{{nickname}}","accountType":"{{account_type}}"}' class="link close-popup"><img class="stretch lazy" data-url="http://embed.ziggeo.com/v1/applications/ddd4366d3fc0baef95c333fa575c53f9/videos/{{ziggeocode}}/video.mp4"  src="http://embed.ziggeo.com/v1/applications/ddd4366d3fc0baef95c333fa575c53f9/videos/{{ziggeocode}}/image"  onError="this.onerror=null;this.src='images/error_video.jpg';" class="play-video1 stretch"> </a></div>
+         
+
+			
+        	{{hashtag}}
+			{{#unless web_link}} {{else}}<center class="web-link"><i class="fa fa-external-link" aria-hidden="true"></i> {{web_link}}</center> {{/unless}}
+			{{#unless location}}  {{else}} <center class="web-link"><i class="fa fa-map-marker" aria-hidden="true"></i> {{location}} </center> {{/unless}}
+			 <center><span class="rating-static rating-{{star}}"></span></center>
+            <p class="color-gray">
+			    
+				<span class="action-menu link close-popup"  data-activityid="{{id}}" data-userid="{{user_id}}" data-items='{"id":"{{id}}","is_follow":{{is_follow}},"user_id":"{{user_id}}","username":"{{nickname}}","accountType":"{{account_type}}","action":"{{action}}","title":"{{time}}","avatar":"{{avatar}}","ziggeocode":"{{ziggeocode}}"}'><i class="fa fa-ellipsis-v fa-2x"></i></span> 
+			 </p>
+            </div>
+            <div class="card-footer no-border">
+			 <!-- Data-popover links removed from A Href  data-popover=".popover-links" and Class 'open-popover' -->
+                <input type="hidden" class="share-link" value="/members/{{nickname}}/activity/{{id}}">
+               		<div class="tabbar-labels">
+						<div class="toolbar-inner">
+							<a href="#" class="tab-link active activity-like" data-id="{{id}}"><input type="hidden" class="ditto-count-hidden" value="{{likes_count}}">
+								{{#if like_button}}<i class="icon fa fa-thumbs-up ditto fa-lg">{{else}}<i class="icon ditto fa fa-thumbs-o-up fa-lg">{{/if}}<span class="badge bg-orange likes">{{js "sezzwhoApp.mainInits.countFormat(this.likes_count)"}}</span></i>
+								{{#if like_button}}<span class="tabbar-label ditto">Unditto</span> {{else}}<span class="tabbar-label ditto">Ditto</span> {{/if}}
+							</a>
+							<a href="pages/android/comment.html?id={{id}}&comment={{comments}}&index={{@index}}&page={{page}}&name={{name}}&user_id={{user_id}}" data-context='{}' class="tab-link-comment close-popup">
+								<i class="icon fa fa-comment-o fa-lg color-purple"><input type="hidden" class="comment-count-hidden" value="{{commentLenght}}"><span class="badge bg-purple comment">{{js "sezzwhoApp.mainInits.countFormat(this.commentLenght)"}}</span></i>
+								<span class="tabbar-label color-purple">Comments</span>
+							</a>
+							<a href="#" class="tab-link close-popup" onClick="sezzwhoApp.commonFunc.referActivity({{id}})">
+								<i class="icon fa fa-share-alt-square fa-lg color-lightgreen"><input type="hidden" class="refer-count-hidden" value="{{refer_count}}"><span class="badge bg-lightgreen refer">{{js "sezzwhoApp.mainInits.countFormat(this.refer_count)"}}</span></i>
+								<span class="tabbar-label color-lightgreen"> Recommends</span>
+							</a>
+							<a href="#" class="tab-link share-button"  data-arg='{"id":"{{id}}","text":"Check out this","video":"{{ziggeocode}}","videoCheck":true}'>
+								<i class="icon fa fa-share-square fa-lg"><input type="hidden" class="share-count-hidden" value="{{share_count}}"><span class="badge bg-indigo share-count">{{js "sezzwhoApp.mainInits.countFormat(this.share_count)"}}</span></i>
+								<span class="tabbar-label">Share</span>
+							</a>
+						</div>
+					</div>
+            </div>
+       </div>
+       {{/if}}
+       {{/each}}
+      </script>
+      
+      <!-- Notification Template -->
+      <script type="text/template" id="notification-template" >
+        {{#each ../item}}
+	  <div class="list-block notification-{{notificationId}}" id="notification-{{notificationId}}" >
+	   <ul>
+        <li class="item-content" >
+        
+          <!--<div class="item-inner">
+            <div class="item-title">Item title</div>
+            <div class="item-after">Label</div>
+          </div> -->
+        
+			  <div class="wrapper">
+			 <a href="pages/android/detailpage.html?id={{senderid}}&username={{nickname}}&accountType={{account_type}}" data-context='{"accountType":"{{account_type}}","id":"{{senderid}}"}'><img src="{{avatar}}" alt="" onError="this.onerror=null;this.src='images/gravatar.png';"></a>
+			  <article>
+				<h2><a href="pages/android/detailpage.html?id={{senderid}}&username={{nickname}}" data-context='{"accountType":"{{account_type}}","id":"{{senderid}}"}' target="_blank" >@{{nickname}}</a></h2>
+				<p>
+				{{#js_compare "this.componentname === 'refer'"}}
+				<i class="fa fa-heart"></i><strong> @{{refername}} </strong>recommended<strong> @{{video_refer_name}}</strong> <i class="fa fa-video-camera"></i> video to you. <a href="pages/android/singlepage.html?item={{itemid}}&markID={{notificationId}}"><i class="fa fa-bars fa-2x"></i> View</a>
+               				
+				{{else}}
+					{{#js_compare "this.componentname === 'ditto'"}}
+					<i class="fa fa-heart"></i> {{refername}} dittod your <i class="fa fa-video-camera"></i> video. <a href="pages/android/singlepage.html?item={{itemid}}&markID={{notificationId}}"><i class="fa fa-bars"></i> View</a>
+						{{else}}		
+					 {{content}}
+						<a href="pages/android/singlepage.html?item={{itemid}}&markID={{notificationId}}"><i class="fa fa-bars"></i> View</a>                 				
+					{{/js_compare}}
+				{{/js_compare}}
+				</p>
+			  </article>
+			  <nav>
+				<ul>
+				  <li class="time"><i class="fa fa-clock-o"></i> {{time}}</li>
+				  <li><a href="#" data-id="{{notificationId}}" class="fa fa-trash fa-fg theme-red notification-delete"></a></li>
+				
+				</ul>
+			  </nav>
+			</div>
+			</li>
+			</ul>
+		</div>
+          
+      {{/each}}
+      </script>
+      
+	  <!--  Comments Template -->
+	  <script type="text/template" id="comment-template">
+	  
+	  {{#each ../item}}
+			 <div class="card facebook-card comment-{{id}}" id="comment-{{id}}">
+			  <div class="card-header">
+				<div class="facebook-avatar">
+				<a href="pages/android/detailpage.html?id={{user_id}}&username={{nickname}}&accountType={{account_type}}" data-context='{"accountType":"{{account_type}}","id":"{{user_id}}"}'><img src="{{avatar}}" width="34" height="34"></a>
+		  		</div>
+				<div class="facebook-name">{{action}}</div>
+				<div class="facebook-date">{{time}}</div>
+			  </div>
+			  <div class="card-content">
+				<div class="card-content-inner">
+				{{#if text_comment}}
+				<p class="fisrt-letter">{{text_content}}</p>
+				{{else}}
+				<video width="100%" height="300" poster="http://embed.ziggeo.com/v1/applications/ddd4366d3fc0baef95c333fa575c53f9/videos/{{ziggeocode}}/image" controls>
+            		<source src="http://embed.ziggeo.com/v1/applications/ddd4366d3fc0baef95c333fa575c53f9/videos/{{ziggeocode}}/video.mp4" type="video/mp4">
+            	</video> 
+				{{/if}}
+				      
+				  	<p class="color-gray">Ditto: <span class="likes badge bg-lightgreen">{{likes_count}}</span>   
+				    <!--	Reply: <span class="comment badge bg-lightgreen">{{commentLenght}}</span> -->
+					</p>
+				</div>
+			  </div>
+			  <div class="card-footer">
+				 <a href="#" class="link comment-ditto" data-userid="{{user_id}}" data-id="{{id}}">{{#if like_button}}<i class="fa fa-thumbs-o-down"></i><span> Unditto </span>{{else}} <i class="fa fa-thumbs-o-up"></i><span> Ditto </span>{{/if}} </a>
+			<!--	<a href="#" class="link">Reply</a> -->
+			   {{#js_compare "this.user_id !== sezzwhoApp.userloginInfo.user.id"}}
+			   
+			   {{#if text_comment}}
+			    <a href="#" class="tab-link share-button-comments color-indigo"  onclick="sezzwhoApp.commonFunc.shareCommentWidget(this)"    data-arg='{"id":"{{id}}","text":"{{text_share_content}}","image":"images/sezz-bar-logo.png","videoCheck":false}'>
+				{{else}}
+				 <a href="#" class="tab-link share-button-comments color-indigo"  onclick="sezzwhoApp.commonFunc.shareCommentWidget(this)"  data-arg='{"id":"{{id}}","text":"Check out this","video":"{{ziggeocode}}","videoCheck":true}'>
+				 {{/if}}
+								<i class="icon fa fa-share-alt fa-lg"><input type="hidden" class="share-count-hidden" value="{{share_count}}"><!--<span class="badge bg-indigo share-count">{{js "sezzwhoApp.mainInits.countFormat(this.share_count)"}}</span>--></i>
+								<span class="color-indigo"> SHARE</span>
+							</a>
+			  {{else}}
+				<a href="#" class="link comment-delete" data-userid="{{user_id}}" data-id="{{id}}"><i class="fa fa-minus-square-o"></i> Delete</a>
+			  {{/js_compare}}
+			  </div>
+			</div>  
+			{{/each}}
+	  </script>
+	  
+     
+      
+      <!-- Profile Template --->
+      
+      <script type="text/template" id="profile-template">
+   					<div class="list-block">
+                      <ul>
+                        <li class="swipeout">
+                          <div class="swipeout-content item-content">
+                            <div class="item-media">Name</div>
+                            <div class="item-inner">{{}}</div>
+                          </div>
+                          <div class="swipeout-actions-right">
+                            <a href="#" class="action1 bg-lightgreen">Save</a>
+                          </div>
+                        </li>
+                        <li class="swipeout">
+                          <div class="swipeout-content item-content">
+                            <div class="item-media">Account Type</div>
+                            <div class="item-inner">{{}}</div>
+                          </div>
+                          <div class="swipeout-actions-right">
+                            <a href="#" class="action1 bg-orange">Edit</a>
+                            <a href="#" class="action2 bg-lightgreen">Save</a>
+                          </div>
+                        </li>
+                      	<li class="swipeout">
+                          <div class="swipeout-content item-content">
+                            <div class="item-media">Phone no</div>
+                            <div class="item-inner"></div>
+                          </div>
+                          <div class="swipeout-actions-right">
+                            <a href="#" class="action1 bg-orange">Edit</a>
+                            <a href="#" class="action2 bg-lightgreen">Save</a>
+                          </div>
+                        </li>
+                        <li class="swipeout">
+                          <div class="swipeout-content item-content">
+                            <div class="item-media">Address</div>
+                            <div class="item-inner"></div>
+                          </div>
+                          <div class="swipeout-actions-right">
+                            <a href="#" class="action1 bg-orange">Edit</a>
+                            <a href="#" class="action2 bg-lightgreen">Save</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+
+
+	</script>
+	<script type="text/template" id="popular-video-template">
+      			<div class="content-block-title">Most Popular Videos</div>
+                  <div class="swiper-container swiper-3">
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-wrapper">
+                     {{#each ../item}}
+					  
+				      <div class="swiper-slide"><span> <video width="100%" height="128" poster="http://embed.ziggeo.com/v1/applications/ddd4366d3fc0baef95c333fa575c53f9/videos/{{ziggeocode}}/image" controls>
+            <source src="http://embed.ziggeo.com/v1/applications/ddd4366d3fc0baef95c333fa575c53f9/videos/{{ziggeocode}}/video.mp4" type="video/mp4"> </video></span></div>
+					  {{/each}}
+                    </div>
+                 </div>
+      
+    </script>
+	  
+     <!--  Action Custom Template --> 
+      	<script type="text/template" id="actions-modal-custom">
+
+            <!-- This template equalt to default layout -->
+            <div class="actions-modal custom-action-model">
+              <!-- this is a single group -->
+              {{#each this}}
+                <div class="actions-modal-group">
+                  <!-- now this represents a single button -->
+                  {{#each this}}
+                      {{#if label}}
+                       <!-- <span class="actions-modal-label"> {{text}}</span> -->
+                      {{else}}
+                        <!-- <div class="actions-modal-button {{#if color}}color-{{color}}{{/if}} {{#if bold}}actions-modal-button-bold{{/if}}">{{text}}</div> -->
+                      {{/if}}
+                 
+              {{#if items}}
+			  <div class="row content-block header-action">
+			    <div class="col-80"><strong>What would you like to do?</strong></div> <div class="col-20" onclick="sezzwhoApp.commonFunc.actionButtons('close')"><i class="fa fa-times-circle fa-3x color-lightgreen" aria-hidden="true"></i></div>
+				 <div class="col-100 facebook-card">
+				 <div class="card-header no-border">
+						<div class="facebook-avatar">
+						<a href="pages/android/detailpage.html?id={{this.data.user_id}}&username={{this.data.username}}&accountType={{this.data.accountType}}" data-context='{"accountType":"{{this.data.accountType}}","id":"{{this.data.user_id}}"}' class="close-popup"><img src="{{this.data.avatar}}" width="34" height="34" onerror="this.onerror=null;this.src='images/gravatar.png';"></a>
+						</div>
+						<div class="facebook-name">{{this.data.action}}</div>
+						<div class="facebook-date">{{this.data.title}}</div>
+					</div>
+				 
+				 </div>
+			  </div>
+			   <hr>
+				  <div class="row content-block content-action">
+				   	{{#js_compare "this.data.user_id==this.loginUser"}}
+						<div class="col-33"  onclick="sezzwhoApp.commonFunc.actionButtons('edit')"><p><a href="#" class="button button-fill button-raised color-lightgreen">Edit</a></p></div>
+					{{else}}
+						<div class="col-33" ><p><a href="#" data-id="{{this.data.user_id}}" data-type="follow" onclick="sezzwhoApp.commonFunc.actionButtons(this)" class="button button-fill button-raised color-lightgreen"> {{#if this.data.is_follow}} <span data-type="unfollow-{{this.data.user_id}}"  class="stopfollow"><i class="fa fa-user-times"></i> Unfollow </span> {{else}} <span data-type="follow-{{this.data.user_id}}" class="startfollow"><i class="fa fa-user-plus"></i> Follow </span> {{/if}}</a></p></div>
+			 
+					{{/js_compare}}
+						<div class="col-33" data-arg='{"id":"{{this.data.id}}","text":"Check out this","video":"{{this.data.ziggeocode}}","videoCheck":true}' onclick="sezzwhoApp.commonFunc.actionButtons('share')"><p><a href="#" class="button button-fill button-raised color-indigo"  data-arg='{"id":"{{this.data.id}}","text":"Check out this","video":"{{this.data.ziggeocode}}","videoCheck":true}'>Share Post</a></p></div>
+					{{#js_compare "this.data.user_id==this.loginUser"}}
+						<div class="col-33"  onclick="sezzwhoApp.commonFunc.actionButtons('delete')"><p><a href="#" class="button button-fill button-raised color-red">Delete</a></p></div>
+					{{else}}	
+						<div class="col-33" onclick="sezzwhoApp.commonFunc.actionButtons('profile')"><p><a href="pages/android/detailpage.html?id={{this.data.user_id}}&username={{this.data.username}}&accountType={{this.data.accountType}}" data-context='{"accountType":"{{this.data.accountType}}","id":"{{this.data.user_id}}"}' class="button button-fill button-raised color-orange">Visit User Profile</a></p></div>
+					{{/js_compare}}	
+				  </div>
+				  <hr>
+				  <div class="row content-block footer-action">
+				  <div class="col-100" onclick="sezzwhoApp.commonFunc.actionButtons('report')"> <p><a href="#" class="button button-fill button-raised color-red"><i class="fa fa-info-circle" aria-hidden="true"></i> REPORT VIDEO</a></p> </div>
+                </div>
+				{{/if}}
+				 {{/each}}
+                </div>
+				  {{/each}}
+				  
+            </div>            
+      </script>
+	  <script type="text/template" id="following-list-template">
+	    
+			  {{#each ../item}}
+                <li> <a href="pages/android/detailpage.html?id={{user_id}}&username={{nickname}}&accountType={{account_type}}&backRoute=yes" data-context='{"accountType":"{{account_type}}","id":"{{user_id}}"}'>
+                  <div class="item-content">
+                    <div class="item-media"><img src="{{avatar}}" width="44"></div>
+                    <div class="item-inner">
+                      <div class="item-title-row">
+                        <div class="item-title">{{username}}</div>
+						<div class="item-after"><input type="hidden" class="post-hidden-count" value="{{count}}"><span>{{js "sezzwhoApp.mainInits.countFormat(this.count)"}} POSTS</span></div>
+                      </div>
+                      <div class="item-subtitle">{{bio}}</div>
+                    </div>
+                  </div></a>
+                </li>
+				{{/each}}
+	  </script>
+      <script type="text/template" id="follower-list-template">
+	    
+			  {{#each ../item}}
+                <li> <a href="pages/android/detailpage.html?id={{user_id}}&username={{nickname}}&accountType={{account_type}}&backRoute=yes" data-context='{"accountType":"{{account_type}}","id":"{{user_id}}"}'>
+                  <div class="item-content">
+                    <div class="item-media"><img src="{{avatar}}" width="44"></div>
+                    <div class="item-inner">
+                      <div class="item-title-row">
+                        <div class="item-title">{{username}}</div>
+						<div class="item-after"><input type="hidden" class="post-hidden-count" value="{{count}}"><span>{{js "sezzwhoApp.mainInits.countFormat(this.count)"}} POSTS</span></div>
+                      </div>
+                      <div class="item-subtitle">{{bio}}</div>
+                    </div>
+                  </div></a>
+                </li>
+				{{/each}}
+	  </script>
+      
+    	
+        
+       	<script src="https://assets-cdn.ziggeo.com/v1-r25/ziggeo.js"></script>
+      	<script>ZiggeoApi.token = "ddd4366d3fc0baef95c333fa575c53f9";</script>
+      	<script>ZiggeoApi.Config.cdn = true;</script>
+		<script>ZiggeoApi.Config.webrtc = true;</script>
+		<script>ZiggeoApi.Config.resumable = true;</script>
+
+         <!-- 3. flowplayer -->
+        <script src="http://releases.flowplayer.org/6.0.5/flowplayer.min.js"></script>
+           <!-- the IMA SDK -->
+        <script src="http://s0.2mdn.net/instream/html5/ima3.js"></script>
+        <!-- your AdSense plugin (at your server) -->
+		<script src="http://releases.flowplayer.org/asf/flowplayer.org/2.1.3/asf.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.0.1/react.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.0.1/react-dom.js"></script>
+        <script type="application/javascript"  src="js/require/requirejs.js"></script>
+        <script type="application/javascript" src="lib/script.min.js"></script>
+        <script type="application/javascript" src="lib/optimized.min.js"></script>
+	<!--  <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-app.js"></script>
+	     <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-messaging.js"></script> -->
+	 <!-- ReactJS Code -->
+<!--	  <script src="http://debug-software.intel.com/target/target-script-min.js#wl8qp69mG2QPl6IK1cdevPQW3f06sHGt9T750e_txxU"></script> 
+	  <script src="http://www.dominikgorecki.com/p/flow-up/flowup.js"></script> -->
+    
+      
+  </body>
+
+</html>

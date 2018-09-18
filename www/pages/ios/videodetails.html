@@ -1,0 +1,62 @@
+<div class="navbar">
+   <div class="navbar-inner">
+      <div class="left sliding"><a href="#" class="back link color-white"> <i class="icon icon-back color-white"></i><span>back</span></a></div>
+      <div class="center sliding"><span class="color-black">sezz</span><span class="color-white">who</span></div>
+      <!--<div class="right"><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a></div>-->
+   </div>
+</div>
+<div class="pages navbar-through">
+   <div class="page no-toolbar" data-page="videodetail">
+      <!-- Speed Dial Wrap -->
+      <div class="speed-dial">
+         <!-- FAB inside will open Speed Dial actions -->
+         <a href="#" class="floating-button">
+            <!-- First icon is visible when Speed Dial actions are closed --><i class="fa fa-commenting-o fa-lg" aria-hidden="true"></i>
+            <!-- Second icon is visible when Speed Dial actions are opened --><i class="fa fa-times"></i> 
+         </a>
+         <!-- Speed Dial Actions -->
+         <div class="speed-dial-buttons">
+            <!-- First Speed Dial button -->
+            <!--<a href="#" onClick="sezzwhoApp.commonFunc.shareWidget()"> <i class="fa fa-share"></i> </a>-->
+            <a href="#" onClick="sezzwhoApp.comments.textWidget()"> <i class="fa fa-text-width"></i> </a>
+            <!-- Second Speed Dial  button --><a href="#" data-picker=".picker-1" class="link open-picker record-comment background-red"><i  class="fa fa-video-camera"></i></a> 
+         </div>
+      </div>
+      <!-- End of Speed Dial -->
+      <div class="page-content">
+         <div class="story-header">
+            <div class="story-title color-lightgreen"><i class="fa fa-eye" aria-hidden="true"></i> sezz<span class="color-white">who</span></div>
+            <div class="story-info">
+               <!-- <div class="player" data-native_fullscreen="true" data-ratio="0.4167">
+                  <video>
+                       <source type="video/mp4" src="http://embed.ziggeo.com/v1/applications/ddd4366d3fc0baef95c333fa575c53f9/videos/{{ziggeocode}}/video.mp4">
+                  </video>
+                      </div> -->
+               <div id="overlay"  data-native_fullscreen="true" style="background-image:url(http://embed.ziggeo.com/v1/applications/ddd4366d3fc0baef95c333fa575c53f9/videos/{{ziggeocode}}/image?effect_profile=ba51b5e2f51692f07abe8f49bd4b56c3); -webkit-background-size: cover; -moz-background-size: cover;-o-background-size: cover; background-size: cover;" class="flowplayer Minimalist"></div>
+                <!--<ziggeo ziggeo-video='{{ziggeocode}}'
+                            ziggeo-responsive= true
+                            ziggeo-auto_crop=true
+                            ziggeo-effect_profile="ba51b5e2f51692f07abe8f49bd4b56c3"
+                            ziggeo-video_profile="a9068e8d98ff6d36dd3ec66f35986d0c"     
+    						>
+			  </ziggeo>-->
+            </div>
+            <div class="story-link"><a href="" target="_blank" class="external"></a></div>
+         </div>
+         <div class="story-comments facebook-card" style="padding-top:32px">
+            <div class="card-header no-border">
+               <div class="facebook-avatar">
+                  <a href="pages/ios/detailpage.html?id={{user_id}}&username={{username}}&accountType={{accountType}}" data-context='{"accountType":"{{accountType}}","id":"{{user_id}}"}' class="close-popup"><img src="{{avatar}}" width="34" height="34" onError="this.onerror=null;this.src='images/gravatar.png';"></a>
+               </div>
+               <div class="facebook-name">{{action}}</div>
+               <div class="facebook-date">{{time}}</div>
+            </div>
+            <div class="messages loadComments">
+               <div class="content-block-title">Comments</div>
+               <div class="preloader preloader-lightgreen"></div>
+               <!--<div class="preloader-label">Loading comments...</div>-->
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

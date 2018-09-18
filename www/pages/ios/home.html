@@ -1,0 +1,157 @@
+  <!-- Top Navbar-->
+		  <div class="navbar">
+		  <div class="navbar-inner">
+			<div class="left sliding refreshAll">
+				<a href="#"  class="refresh-click link color-white">
+                        <i class="fa fa-refresh color-white"></i>
+                    </a></div>
+			<div class="center sliding"><span class="color-black">sezz</span><span class="color-white">who</span></div>
+			<div class="right"><a href="#" class="link open-panel icon-only"><i class="icon icon-bars color-white"></i></a></div>
+
+		  </div>
+		</div>
+      <div class="pages navbar-through">
+  
+     <div class="page toolbar-fixed" id="homeView" data-page="home" >
+            
+             <!-- Speed Dial Wrap -->
+              <div class="speed-dial">
+                <!-- FAB inside will open Speed Dial actions -->
+                <a href="#" class="floating-button">
+                  <!-- First icon is visible when Speed Dial actions are closed -->
+                  <i class="fa fa-video-camera fa-lg color-white" aria-hidden="true"></i>
+                  <!-- Second icon is visible when Speed Dial actions are opened -->
+                  <i class="fa fa-times fa-lg color-white"></i>
+                </a>
+                <!-- Speed Dial Actions -->
+                <div class="speed-dial-buttons">
+                  <!-- First Speed Dial button -->
+                  <a href="#" class="sezzwho-searchbar">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <!-- Second Speed Dial  button -->
+                  <a href="#" data-popup=".popup-record"  class="link record-activity open-popup-record background-red"><i  class="fa fa-video-camera color-red"></i></a>
+                  
+                </div>
+              </div>
+              <!-- End of Speed Dial -->
+            <!-- Bottom Toolbar-->
+                    <div class="toolbar tabbar tabbar-labels">
+                        <div class="toolbar-inner">
+                          <!-- <a href="#" data-popup=".popup-record" class="tab-link open-popup-record">
+                                <i class="fa fa-video-camera  fa-2x"></i>
+                            </a>  -->
+                            <a href="#tab1" class="tab-link active color-black" >
+                                <i class="fa fa-line-chart fa-lg"></i>
+                                <span class="tabbar-label">Trends</span>
+    
+                            </a> 
+                            <a href="#tab2" class="tab-link color-black">
+                                <i class="fa fa-newspaper-o fa-lg">
+                                <!--<span class="badge bg-green">15</span>-->
+                                </i>
+                                <span class="tabbar-label">Activity</span>
+                            </a>
+                            <a href="#tab3" class="tab-link color-black">
+                                <i class="fa fa-flag fa-lg">
+                                <span class="badge bg-red">0</span>
+                                    </i>
+                                <span class="tabbar-label">Notifications</span>
+        
+                            </a>
+                            <a href="#tab4" class="tab-link userprofile color-black">
+                                <i class="fa fa-user fa-lg"></i>
+                                <span class="tabbar-label">Profile</span>
+                            </a>
+                        </div>
+                    </div>
+           
+            <div class="tabs-swipeable-wrap">
+                  
+              <div class="tabs">
+                <!-- Tab 1, active by default -->
+                <div id="tab1" class="tab active page-content infinite-scroll">
+                    <div class="content-block">
+                          <div class="content-title trends"> Trends </div>	
+                          <div id="popular-vidoes">
+                            <center>loading ... <br>
+                            <i class="fa fa-spinner fa-pulse fa-lg color-lightgreen"></i>
+                            </center>
+                        </div>
+                    </div> 
+                </div> 
+                <!-- Tab 2 -->
+                <div id="tab2" class="tab cached page-content pull-to-refresh-content infinite-scroll infinite-scroll-following" data-distance="100" >
+                      <!-- Default pull to refresh layer-->
+                    <div class="pull-to-refresh-layer">
+                      <div class="preloader"></div>
+                      <div class="pull-to-refresh-arrow"></div>
+                    </div>    
+                    <!-- Search Bar -->
+                    <form class="searchbar" id="following-search">
+                        <div class="searchbar-input">
+                            <input type="search" placeholder="SEARCH REVIEWS">
+                            <a href="#" class="searchbar-clear"></a>
+                        </div>
+                        <a href="#" class="searchbar-cancel">Cancel</a>
+                    </form>
+                    
+                    
+                    
+                      <div class="load-result"></div>
+                     
+               
+                    <!-- Preloader -->
+                      <div class="infinite-scroll-preloader infinite-scroll-preloader-following">
+                        loading ... <br>
+                          <i class="fa fa-spinner fa-pulse fa-lg color-lightgreen"></i>
+                          <div class="preloader-custom"></div>
+                      </div>
+                  
+                </div>
+                <!-- Tab 3 -->
+                <div id="tab3" class="tab cached page-content">
+                 <!--<div class="pull-to-refresh-layer">
+                      <div class="preloader"></div>
+                      <div class="pull-to-refresh-arrow"></div>
+                    </div>--> 
+                  <div class="content-block">
+                    <div class="content-title trends"> Notifications </div>	
+                      <div class="notification-template"></div>
+                  </div>
+                </div>
+                   <!-- Tab 4 -->
+                <div id="tab4" class="tab cached infinite-scroll infinite-scroll-personal page-content">
+                             <!-- Search Bar -->
+                    <form class="searchbar" id="personal-search">
+                        <div class="searchbar-input">
+                            <input type="search" placeholder="Search">
+                            <a href="#" class="searchbar-clear"></a>
+                        </div>
+                        <a href="#" class="searchbar-cancel">Cancel</a>
+                    </form>
+                  <div class="content-block1">
+                      <div class="user-profile-header"></div>
+                                            
+                  </div>
+                    <div class="content-block1">
+                        <div class="presonal-content"></div>      
+                    </div>
+                    
+                     <!-- Preloader -->
+                      <br>
+                      <div class="infinite-scroll-preloader-personal-page">
+                        loading ... <br>
+                          <i class="fa fa-spinner fa-pulse fa-lg color-lightgreen"></i>
+                          <div class="preloader-custom"></div>
+                      </div>
+                </div>
+                   
+              </div>
+                
+            </div>
+        </div>
+        
+        </div>
+    
+      

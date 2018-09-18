@@ -1,0 +1,45 @@
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="left sliding">
+				<a href="#" class="back link color-white"> <i class="icon icon-back color-white"></i><span>Back</span></a>
+			</div>
+			<div class="center sliding">Comments</div>
+			<div class="right">
+				<a href="#" class="link icon-only open-panel"> <i class="icon icon-bars color-white"></i></a>
+			</div>
+		</div>
+	</div>
+    <div class="pages navbar-through">
+
+    <div data-page="comment" class="page cached">
+    
+        <!-- Speed Dial Wrap -->
+        <div class="speed-dial">
+            <!-- FAB inside will open Speed Dial actions -->
+            <a href="#" class="floating-button">
+                <!-- First icon is visible when Speed Dial actions are closed --><i class="fa fa-commenting-o fa-lg" aria-hidden="true"></i>
+                <!-- Second icon is visible when Speed Dial actions are opened --><i class="fa fa-times"></i> </a>
+            <!-- Speed Dial Actions -->
+            <div class="speed-dial-buttons">
+                <!-- First Speed Dial button -->
+                <!--<a href="#" onClick="sezzwhoApp.commonFunc.shareWidget()"> <i class="fa fa-share"></i> </a>-->
+                <a href="#" onClick="sezzwhoApp.comments.textWidget()"> <i class="fa fa-text-width"></i> </a>
+                <!-- Second Speed Dial  button --><a href="#" data-picker=".picker-1" class="link open-picker record-comment background-red"><i  class="fa fa-video-camera"></i></a> </div>
+        </div>
+        <!-- End of Speed Dial -->
+        <div class="page-content infinite-scroll infinite-scroll-comment">
+            <div class="content-block-title">Comments</div>
+            <!--<div class="comments-recording" ><a href="#" data-picker=".picker-1" class="link open-picker"><img id="recordComment" onclick="sezzwhoApp.personalFeeds.recordVideo('comments')" width="75px" src="images/sezz-record2.png"></a></div>-->
+            <div class="content-block">
+                <div class="loadComments"></div>
+                <!-- Preloader -->
+                <br>
+                <div class="infinite-scroll-preloader-comment-page"> loading ... <br>
+                    <i class="fa fa-spinner fa-pulse fa-lg color-lightgreen"></i>
+                    <div class="preloader-custom"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    </div>

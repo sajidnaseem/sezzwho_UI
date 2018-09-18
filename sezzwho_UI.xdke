@@ -1,0 +1,20 @@
+{
+  "project": {
+    "projectSettingsVersion": "3.0.0",
+    "currentBuildConfiguration": "Android",
+    "projectFiles": {},
+    "projectDirectories": {},
+    "initialAutoPluginCount": 0,
+    "currentService": {
+      "methodapi": "search",
+      "endPoint": "Search",
+      "service": "rottentomatoes"
+    }
+  },
+  "editorTab": {
+    "currentEditorMode": 0
+  },
+  "build-tab": {
+    "selectedTargets": []
+  }
+}
